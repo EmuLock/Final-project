@@ -2,6 +2,11 @@ body, html {
     height: 100%;
 }
 
+body {
+  height: 100%;
+  background-color: grey;
+}
+
 /* The hero image */
 .hero-image {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
@@ -34,4 +39,8 @@ body, html {
 
 .card col {
     padding: 20px;
+}
+
+#card-img-top {
+  height: 20%;
 }
