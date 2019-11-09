@@ -1,53 +1,119 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 
 <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Collapsible sidebar using Bootstrap 4</title>
 
-    <link rel='stylesheet' href='styles.css'>
-    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+        integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="style4.css">
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js"
+        integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ"
+        crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js"
+        integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY"
+        crossorigin="anonymous"></script>
+
 </head>
 
 <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="#">FIQH</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-                  aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                  <ul class="navbar-nav">
-                    <li class="nav-item active">
-                      <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                  </ul>
+
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>Learn Fiqh Online</h3>
+                <strong>LFO</strong>
+            </div>
+
+            <ul class="list-unstyled components">
+                <li>
+                    <a href="#intro" data-toggle="collapse" aria-expanded="false">
+                        <i class="fas fa-home"></i>
+                        Intro
+                    </a>
+                </li>
+                <li>
+                    <a href="#whatIsSunnah">
+                        <i class="fas fa-briefcase"></i>
+                        What is Sunnah?
+                    </a>
+                    <a href="#duringPrayer" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <i class="fas fa-copy"></i>
+                        Sunnah during prayers
+                    </a>
+                    <ul class="collapse list-unstyled" id="duringPrayer">
+                        <li>
+                            <a href="#abadh">Sunnah Ab'adh</a>
+                        </li>
+                        <li>
+                            <a href="#haiat">Sunnah Haiat</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#afterPrayer">
+                        <i class="fas fa-image"></i>
+                        Sunnah after prayers
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Page Content  -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="btn btn-info">
+                        <i class="fas fa-align-left"></i>
+                        <span>Toggle Sidebar</span>
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
                 </div>
-              </nav>
-
-   <!-- END OF NAVBAR   -->
-
-    <div class="card mb-3" style="background-color: white; max-width:65em; margin: auto; margin-top:30px;">
-        <img src="kaabah.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">Sunnah Practices during and after prayers</h5>
-            <p class="card-text"><small class="text-muted">Pages 106 -114 | Reading Duration: 10 mins</small></p>
-            <p class="card-text"><strong>What is Sunnah?</strong></p>
-            <p class="card-text">Sunnah, in simple English, is explained as “the way of the prophet”, may it be in the
-                form of speech, actions or habits. In the Islamic culture, Muslims who perform actions which are sunnah
-                will be rewarded by The Almighty and those who do not perform them will not be punished, nor will it
-                invalidate a particular ibadah.</p>
-            <div id="duringPrayer">
-                <p class="card-text"><strong><u>Sunnah practices during prayer</u>
-                    </strong></p>
-                <p class="card-text">It is divided into two:
-                </p>
-                <div id="sunnahAbadh">
+            </nav>
+            <div id="chapter13" class="container">
+                <div id="intro">
+                    <h2>Overview</h2>
+                    <p>By the end of this lesson, you will learn:</p>
+                    <ul>
+                        <li>what is sunnah,</li>
+                        <li>what are the types of Sunnah practices during prayer,</li>
+                        <li>what are the differences between Sunnah Ab'adh and Sunnah Haiat, and</li>
+                        <li>what are the Sunnah practices after prayer.</li>
+                    </ul>
+                </div>
+                <div class="line"></div>
+                <div id="whatIsSunnah">
+                    <h2>What is Sunnah?</h2>
+                    <p><strong>Sunnah</strong>, in simple English, is explained as <em>“the way of the prophet”</em>,
+                        may it
+                        be in the form of speech,
+                        actions or habits. In the Islamic culture, Muslims who perform actions which are sunnah will be
+                        rewarded
+                        by The Almighty and those who do not perform them <u>will not be punished, nor will it
+                            invalidate</u> a
+                        particular ibadah.</p>
+                    <p><strong><u>Sunnah actions during prayer</u></strong></p>
+                    <p>It is divided into two: <em>Sunnah Ab'adh</em> (سنن الأبعاض) and <em>Sunnah Haiat</em> (سنن
+                        الهيئات).
+                    </p>
+                </div>
+                <div class="line"></div>
+                <div id="abadh">
                     <p class="card-text"><strong>1. Sunnah Ab’adh (سنن الأبعاض)</strong></p>
                     <p class="card-text">Sunnah Ab’adh are those which are similar to the actions which are fardhu.
                         Hence,
@@ -68,12 +134,13 @@
                         <li>Selawat (greetings of peace) upon the Prophet’s family during the last tasyahhud.</li>
                     </ol>
                 </div>
-                <div id="sunnahHaiat">
+                <div class="line"></div>
+                <div id="haiat">
                     <p class="card-text"><strong>2. Sunnah Haiat (سنن الهيئات)</strong></p>
-                    <p class="card-text">Sunnah Ab’adh are those which are similar to the actions which are fardhu.
-                        Hence,
-                        it is
-                        sunnah for those who leave sunnah ab’adh to perform sujud sahwi. They are:</p>
+                    <p class="card-text">Sunnah Haiat are those which do not require the performance of sujud sahwi for
+                        those who leave them. There are plenty of sunnah haiat, and among the most important of them
+                        are:
+                    </p>
                     <ol>
                         <li>Adorning a pleasant appearance during prayers, for example by wearing perfume, jubah and
                             etc.
@@ -154,9 +221,9 @@
                         <li>Khusyu’ (continuous focus and attention) in every prayer</li>
                     </ol>
                 </div>
+                <div class="line"></div>
                 <div id="afterPrayer">
-                    <p class="card-text"><strong><u>Sunnah practices after prayer</u>
-                        </strong></p>
+                    <p class="card-text"><strong><u>Sunnah actions after prayers</u></strong></p>
                     <ol>
                         <li>Istighfar (seek forgiveness), zikr, dua.</li>
                         <p class="card-text">(some examples of zikr and dua which are read by the Prophet can be found
@@ -168,22 +235,33 @@
                         <li>Staying at the praying spot until the imaam stands up.</li>
                     </ol>
                 </div>
-
+                <div class="alert alert-success" role="alert"> If you are a student of Madrasah Aljunied Al-Islamiah, <a
+                        href="#" class="alert-link">click this link</a>.</div>
             </div>
-
-            <div class="alert alert-success" role="alert"> If you are a student of Madrasah Aljunied Al-Islamiah, <a
-                    href="#" class="alert-link">click this link</a>.</div>
         </div>
+    </div>
+    </div>
 
-        <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-            crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-            crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-            crossorigin="anonymous"></script>
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+        integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+        integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+        crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+            });
+        });
+    </script>
 </body>
+
+</html>
