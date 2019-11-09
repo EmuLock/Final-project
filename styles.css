@@ -32,13 +32,15 @@ body {
   color: white;
 }
 
-#lessonSection {
-    height: 100vh;
-    background-image: url("geom2.jpg");
+#cardSection {
+  height: 100vh;
+  background-image: url("geom2.jpg");
+  padding-bottom: 20px;
 }
 
-.card col {
-    padding: 20px;
+.card {
+  padding: 20px;
+  margin: auto;
 }
 
 #card-img-top {
@@ -53,6 +55,7 @@ body {
   padding-top: 1%;
   padding-bottom: 0%;
 }
+
 #lastSection h3 {
   position: relative;
   box-shadow: 10px 2px 4px rgba(0, 0, 0, .5);
