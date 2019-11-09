@@ -33,7 +33,7 @@ body {
 
 #lessonSection {
     height: 100vh;
-    
+    background-image: url("geom2.jpg");
 }
 
 .card col {
