@@ -226,7 +226,7 @@ a.article:hover {
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-#cardSection {
+#lessonSection {
   height: 100vh;
   background-image: url("geom2.jpg");
   padding-bottom: 20px;
@@ -243,10 +243,6 @@ a.article:hover {
   padding-top: 20;
 }
 
-#lessonSection {
-  background-image: url("geom2.jpg");
-  height: 300vh;
-}
 #lastSection {
   height: 30vh;
   background-color:rgb(5, 5, 66);
