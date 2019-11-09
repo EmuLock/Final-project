@@ -1,0 +1,30 @@
+
+
+#aftercheck {
+    visibility: hidden;
+}
+
+p  {
+    font-family: 'Raleway', sans-serif;
+    font-size: 130% ;
+}
+
+.btn:hover, .btn:active, .btn:focus {
+    color: #ffffff !important;
+    background-color: #1F2838 !important;
+    border-color: #494F57 !important;
+  }
+  
+   #h1 {
+    text-align: center
+   }
+   .startbuttondiv {
+    text-align: center ;
+    padding-bottom: 20px ;
+   }
+   #navfrst {
+    font-family: 'Raleway', sans-serif;
+   }
+   h1 {
+    font-family: 'Raleway', sans-serif;
+   }
