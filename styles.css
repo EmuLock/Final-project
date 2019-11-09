@@ -42,13 +42,18 @@ body {
 .card {
   padding: 20px;
   margin: auto;
+  padding-top: 3%;
 }
 
 #card-img-top {
   height: 20%;
+  padding-top: 20;
 }
 
-
+#lessonSection {
+  background-image: url("geom2.jpg");
+  height: 300vh;
+}
 #lastSection {
   height: 30vh;
   background-color:rgb(5, 5, 66);
