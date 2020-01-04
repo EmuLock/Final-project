@@ -8,11 +8,13 @@
   <link rel='stylesheet' href='styles.css'>
   <link href="https://fonts.googleapis.com/css?family=Calistoga|Lobster|Nunito|Poppins|Rubik&display=swap"
     rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#"><em>Fiqh To-go</em></a>
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light" style="background-color: #e1ccec;">
+    <a class="navbar-brand" href="#">Fiqh To-go</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -31,13 +33,13 @@
       </ul>
     </div>
   </nav>
-  <div id="intro" class="container">
+  <div id="intro">
     <div class="hero-image">
       <div class="hero-text">
         <h1>Welcome to Fiqh To-go</h1>
         <h4>Here in our website, we provide simple and comprehensive explanation for topics in the Islamic Jurispudence.
           With bite-sized lessons, fun quizzes and an extensive Word Bank, you'll be a whiz in no time!</h4>
-        <a class="btn btn-secondary" href="#lessonSection" role="button">Start learning!</a>
+        <a class="btn btn-secondary" href="#lessonSection" role="button" id="startButton">Start learning!</a>
 
       </div>
     </div>
@@ -49,7 +51,7 @@
   <div id="lessonSection">
     <div class="container">
       <div class="row">
-        <div class="col-4">
+        <div class="col-md-4 col-sm-12">
           <div class="card">
             <img src="Hand-pray.png" height="200" class="card-img-top" alt="...">
             <div class="card-body">
@@ -59,11 +61,11 @@
               <p class="card-text">Learn about the various sunnah practices for prayers to further enhance and improve
                 the quality of your ibaadah. </p>
               <a href="lesson1.html" target="_blank" class="btn btn-outline-success">Start learning</a>
-              <a href="quiz.html" target="_blank" class="btn btn-outline-info"> Test yourself</a>
+              <a href="https://forms.gle/N1TveE2UdBPCLbLq7" target="_blank" class="btn btn-outline-info"> Test yourself</a>
             </div>
           </div>
         </div>
-        <div class="col-4">
+        <div class="col-md-4 col-sm-12">
           <div class="card">
             <img src="pray.png" class="card-img-top" alt="...">
             <div class="card-body">
@@ -76,24 +78,26 @@
             </div>
           </div>
         </div>
-        <div class="col-4">
+        <div class="col-md-4 col-sm-12">
           <div class="card">
             <img src="airplane2.png" height="180" class="card-img-top" alt="...">
             <div class="card-body">
               <p class="card-text"><small class="text-muted">Topic 14 : 139-149 | Reading duration: approx. 10
                   mins</small></p>
               <h5 class="card-title">Lesson 3: Solat for travellers and the sick</h5>
-              <p class="card-text">Prayer is still obligatory for every Muslim, regardless where they are. In this lesson, you will learn how to perform prayers when you are travelling as well as the steps which must be taken during prayers for Muslims who fall sick.</p>
+              <p class="card-text">Prayer is still obligatory for every Muslim, regardless where they are. In this
+                lesson, you will learn how to perform prayers when you are travelling as well as the steps which must be
+                taken during prayers for Muslims who fall sick.</p>
               <a href="lesson3.html" target="_blank" class="btn btn-outline-success">Start learning</a>
-              <a href="quiz.html" target="_blank" class="btn btn-outline-info"> Test yourself</a>
+              <a href="https://forms.gle/SrUcVPCy6FZrHqQt5" target="_blank" class="btn btn-outline-info"> Test yourself</a>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <div id="footer" class="container">
-    <div class="card">
+  <div id="footer">
+    <div class="card" id="footerCard">
       <div class="card-header">
         About Us
       </div>
@@ -108,6 +112,29 @@
     </div>
   </div>
 
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+  <script>
+    //WORD BANK
+    //Get the button:
+    mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () { scrollFunction() };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+  </script>
 
 
 

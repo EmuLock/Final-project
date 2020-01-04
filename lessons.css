@@ -1,11 +1,13 @@
+
 /*
     DEMO STYLE
 */
 
 @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
-body {
+body,html {
     font-family: 'Poppins', sans-serif;
     background: #fafafa;
+    scroll-behavior: smooth;
 }
 
 p {
@@ -57,20 +59,17 @@ span {
 
 .wrapper {
     display: flex;
-    width: 100%;
+    align-items: stretch;
 }
 
 #sidebar {
-    width: 250px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    z-index: 999;
+    min-width: 250px;
+    max-width: 250px;
     background: #916dd5;
     color: #fff;
     transition: all 0.3s;
 }
+
 #sidebar.active {
     min-width: 80px;
     max-width: 80px;
@@ -114,6 +113,10 @@ span {
     -webkit-transform: translateX(50%);
     -ms-transform: translateX(50%);
     transform: translateX(50%);
+}
+
+#sidebar.active > .sidebar-header {
+    padding: 0px;
 }
 
 #sidebar .sidebar-header {
@@ -198,17 +201,10 @@ a.article:hover {
 ----------------------------------------------------- */
 
 #content {
-    width: calc(100% - 250px);
-    padding: 40px;
+    width: 100%;
+    padding: 20px;
     min-height: 100vh;
     transition: all 0.3s;
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-
-#content.active {
-    width: 100%;
 }
 
 /* ---------------------------------------------------
@@ -216,21 +212,11 @@ a.article:hover {
 ----------------------------------------------------- */
 
 @media (max-width: 768px) {
-    #content {
-        width: 100%;
-        padding: 0px;
-    }
-
-    #sidebar.active > #content {
-        background: black;
-    }
-
     #sidebar {
         min-width: 80px;
         max-width: 80px;
         text-align: center;
         margin-left: -80px !important;
-        margin-top: 67px;
     }
     .dropdown-toggle::after {
         top: auto;
@@ -269,18 +255,9 @@ a.article:hover {
     #sidebar {
         margin-left: 0;
     }
-    
     #sidebarCollapse span {
         display: none;
-        
     }
-}
-html {
-    scroll-behavior: smooth;
-}
-#intro, #whatIsSunnah, #abadh, #afterPrayer {
-    height: 100vh;
-    padding-top: 25px;
 }
 
 #myBtn {
@@ -291,14 +268,14 @@ html {
     z-index: 99; /* Make sure it does not overlap */
     border: none; /* Remove borders */
     outline: none; /* Remove outline */
-    background-color: black; /* Set a background color */
+    background-color: #3e206d; /* Set a background color */
     color: white; /* Text color */
     cursor: pointer; /* Add a mouse pointer on hover */
     padding: 15px; /* Some padding */
     border-radius: 10px; /* Rounded corners */
     font-size: 18px; /* Increase font size */
-  }
+}
   
-  #myBtn:hover {
+#myBtn:hover {
     background-color: #555; /* Add a dark-grey background on hover */
-  }
+}
