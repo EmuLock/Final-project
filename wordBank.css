@@ -15,7 +15,7 @@ html {
   /* Position and center the image to scale nicely on all screens */
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size:cover;
   position: relative;
 }
 
@@ -30,7 +30,7 @@ html {
 }
 
 #lesson1, #lesson2, #lesson3 {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 
