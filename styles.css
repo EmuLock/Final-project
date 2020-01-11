@@ -49,12 +49,17 @@ body {
 
 #startButton {
   background-color: #916dd5;
-  text-align: center;
 }
 
 #startButton:hover {
   transform: scale(1.25); 
 }
+
+.learning {
+  text-align: center;
+}
+
+
 
 h1 {
     font-family: 'Lobster', cursive;
