@@ -42,6 +42,16 @@ body {
   background-color: #916dd5;
 }
 
+#startButton:hover {
+  transform: scale(1.25); 
+}
+
+.learning {
+  text-align: center;
+}
+
+
+
 h1 {
     font-family: 'Lobster', cursive;
 }
@@ -98,3 +108,6 @@ h4, a {
   background-color: #555; /* Add a dark-grey background on hover */
 }
 
+#ggleforms {
+  margin-top: 85px;
+}
