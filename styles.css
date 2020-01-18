@@ -50,8 +50,6 @@ body {
   text-align: center;
 }
 
-
-
 h1 {
     font-family: 'Lobster', cursive;
 }
@@ -67,7 +65,7 @@ h4, a {
   margin-top: 50px;
 }
 
-.btn-outline-success {
+.btn {
   margin-bottom: 10px;
 }
 
