@@ -4,6 +4,9 @@ body, html {
 html {
   scroll-behavior: smooth;
 }
+#intro {
+  min-height: 100vh;
+}
 /* The hero image */
 .hero-image {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
