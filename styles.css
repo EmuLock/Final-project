@@ -36,6 +36,7 @@ body {
   transform: translate(-50%, -50%);
   color: white;
   font-family: Georgia, 'Times New Roman', Times, serif;
+  text-shadow: 2px 2px #000000;
 }
 
 #startButton {
@@ -108,4 +109,8 @@ h4, a {
 
 #ggleforms {
   margin-top: 85px;
+}
+
+#shadower {
+  text-shadow: 2px 2px #000000;
 }
